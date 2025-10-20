@@ -2,13 +2,13 @@
      width="30%"
      style="padding: 10px">
 
-# << Título do projeto >>
+# << Teste Jogo de turno >>
 
-## << Descrição breve do domínio do problema >>
+## << Um jogo onde você luta entre turnos contra monstros >>
 
 > Repositório destinado para o desenvolvimento do projeto final da discipliana PRG22107 - Programação orienta a objeto. 
 > 
-> Aluno: Nome do aluno  
+> Aluno: Gustavo Ignaszevski de Lima 
 > Professor: Hugo Marcondes
 
 <p align=center><strong>SUMÁRIO</strong></p>
