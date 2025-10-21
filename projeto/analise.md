@@ -13,6 +13,8 @@ Neste jogos iremos precisar de duas classes principais, o jogador e o monstro co
 ## Diagrama de Casos de Uso
 
 Apresentar o diagram de casos de uso, identificando as funcionalidades do sistema assim como os atores envolvidos
+
+Aqui vemos que a parte principal é o turno do jogador, onde ele pode escolher qual ação ele fará. O jogo dispõe para o jogador a próxima ação do inimigo, assim ele pode escolher melhor o que ele fará a seguir (alguns inimigos não mostram a próxima ação). Após isto, esta ação é executada, em seguida o monstro executa sua ação, e então entram os eventos secundários, que acontecem fora de turno, como dano por sangramento/veneno, buffs, etc
  
 ## Diagrama de Domínio do problema
 
