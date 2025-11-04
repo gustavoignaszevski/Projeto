@@ -8,7 +8,7 @@ Neste jogos iremos precisar de duas classes principais, o jogador e o monstro co
 
 A parte principal é o turno do jogador, onde ele pode escolher qual ação ele fará. O jogo dispõe para o jogador a próxima ação do inimigo, assim ele pode escolher melhor o que ele fará a seguir (alguns inimigos não mostram a próxima ação). Após isto, esta ação é executada, em seguida o monstro executa sua ação, e então entram os eventos secundários, que acontecem fora de turno, como dano por sangramento/veneno, buffs, etc
 
-<img width="726" height="701" alt="image" src="https://github.com/user-attachments/assets/7d7a37cb-0b26-4e97-a68d-85518d5d8718" />
+<img width="718" height="681" alt="image" src="https://github.com/user-attachments/assets/0697f568-100e-46db-a621-0d9ef445ff5c" />
 
 ## Diagrama de Domínio do problema
 
