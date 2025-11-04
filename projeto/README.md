@@ -2,7 +2,7 @@
      width="30%"
      style="padding: 10px">
 
-# << Teste Jogo de turno >>
+# << Path of Calamity >>
 
 ## << Um jogo onde você luta entre turnos contra monstros >>
 
