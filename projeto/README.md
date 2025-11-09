@@ -2,9 +2,9 @@
      width="30%"
      style="padding: 10px">
 
-# << Path of Calamity >>
+# << Trilha Elemental >>
 
-## << Um jogo onde você luta entre turnos contra monstros >>
+## << Uma luta de turnos entre dois magos com 4 elementos >>
 
 > Repositório destinado para o desenvolvimento do projeto final da discipliana PRG22107 - Programação orienta a objeto. 
 > 
