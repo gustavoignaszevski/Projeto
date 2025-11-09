@@ -8,7 +8,8 @@
 
 > Repositório destinado para o desenvolvimento do projeto final da discipliana PRG22107 - Programação orienta a objeto. 
 > 
-> Aluno: Gustavo Ignaszevski de Lima 
+> Aluno: Gustavo Ignaszevski de Lima
+> 
 > Professor: Hugo Marcondes
 
 <p align=center><strong>SUMÁRIO</strong></p>
