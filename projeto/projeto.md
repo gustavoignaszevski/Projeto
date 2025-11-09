@@ -12,7 +12,6 @@
 # O jogador
 >Pode-se escolher entre alguns magos que possuém caracteristicas unicas, como causar mais dano, preencher as barras elementais mais rapido, curar, etc
 >Cada mago possuí 6 magias, 4 delas sendo as magias principais: 🔥💧🌱🌪️, e duas unicas para cada personagem.
-<div align="center">
 
 # Batalhas
 >Em batalha, o jogador irá batalhar contra a maquina, que utiliza ações baseadas em qual elemento está presente em ambos magos, vida, pontos elementais, etc]
