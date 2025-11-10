@@ -2,17 +2,16 @@
 
 ## Descrição Geral do domínio do problema
 
-Neste jogos iremos precisar de duas classes principais, o jogador e o monstro controlado pelo programa. O jogador possuí três principais ações: Atacar, defender e usar habilidade, o monstro não possuí um padrão de habilidades, ele fara uma ação aleatória ou a mais benéfica para ele, dependendo da dificuldade do monstro
 
 ## Diagrama de Casos de Uso
 
-A parte principal é o turno do jogador, onde ele pode escolher qual ação ele fará. O jogo dispõe para o jogador a próxima ação do inimigo, assim ele pode escolher melhor o que ele fará a seguir (alguns inimigos não mostram a próxima ação). Após isto, esta ação é executada, em seguida o monstro executa sua ação, e então entram os eventos secundários, que acontecem fora de turno, como dano por sangramento/veneno, buffs, etc
+A parte principal é o turno do jogador, onde ele pode escolher qual ação ele fará. O jogo dispõe para o jogador as suas 6 habilidades. Após isto, esta ação é executada, em seguida o oponente executa sua ação. Após isso, os turnos são alterados, agora o oponente fará sua ação primeiro, e então voce age,
 
-<img width="718" height="681" alt="image" src="https://github.com/user-attachments/assets/0697f568-100e-46db-a621-0d9ef445ff5c" />
+<img width="1256" height="329" alt="image" src="https://github.com/user-attachments/assets/65cce211-eb97-4a87-9666-46efa0f154d2" />
 
 ## Diagrama de Domínio do problema
 
-<img width="1099" height="511" alt="image" src="https://github.com/user-attachments/assets/496279a5-9122-48a5-bcfe-15a2ffded199" />
+<img width="961" height="710" alt="image" src="https://github.com/user-attachments/assets/0b35c129-79cc-41a4-819d-07b14c3fc0b1" />
 
 <div align="center">
 
