@@ -4,70 +4,52 @@
 
 # Principal
 
-O jogo consiste em uma luta entre dois magos, ambos com quatro elementos cada: fogo, água, vento e terra. Quando utilizado um elemento no mago inimigo ele fica marcado com tal elemento, assim, ao aplicar um outro elemento nele, acontece uma reação elemental, causando um efeito especial e removendo ambos elementos do alvo.
+Um jogo de turnos que você controla um mago e luta contra criaturas mágicas. O mago possúi quatro elementos e quatro tipos de conjuramento, sendo eles: Fogo, água, terra e vento, e disparo, escudo, técnica e ultimate. Os disparos tem o mesmo comportamento, apenas mudando seu elemento. Já a técnica é especifica para cada elemento, e a ultimate também. Para utilizar a ultimate você precisa carregar uma barra elemental utilizando magias e causando reações elementais, o elemento da magia mais usada é o que define ela. 
 
-Também havendo uma barra elemental para cada elemento, quanto mais você usa do mesmo elemento, mais a barra daquele elemento enche, e as outras esvaziam, isso elevaria o dano de algumas habilidades, habilitaria habilidades passivas, etc.
+O jogador
 
-Logo, a ideia do jogo seria causar o máximo de reações elementais possíveis, ou focar em um elemento só, criando uma forma de jogar flexível e dinâmica.
+Tem os status de ataque e vida, ele pode escolher o elemento da magia e o tipo de conjuramento.
+(Status base: 200 hp, 20 ataque, 10 velocidade)
 
-# O jogador
-Pode-se escolher entre alguns magos que possuém caracteristicas unicas, como causar mais dano, preencher as barras elementais mais rapido, curar, etc.
+>Batalhas
 
-Cada mago possuí 6 magias, 4 delas sendo as magias principais: 🔥💧🌱🌪️, e duas unicas para cada personagem.
+A batalha acontece em turnos, e quem possuír mais velocidade age antes. Caso a velocidade dos dois seja a mesma, o jogador começa.
 
-# Batalhas
-Em batalha, o jogador irá batalhar contra a maquina, que utiliza ações baseadas em qual elemento está presente em ambos magos, vida, pontos elementais, etc.
+# Reações elementais
 
-Os turnos são simultâneos alternados, ou seja, ambas ações acontecem em ordem porém ao mesmo tempo. Isso é: no turno 1: A age, então B age. Agora no turno 2, B age primeiro, depois A, alternando todo turno.
-
-# Barras elementais
-Ambos os lados possuém 4 barras elementais, uma pra cada elemento. Ao utilizar uma habilidade elemental, o barra do mesmo ganha 1 ponto, e causar uma reação, aumenta 1 ponto pros elementos reagidos.
-
-Cada ponto na barra aumenta o dano daquele elemento, até 5 pontos. Algumas habilidades e reações podem diminuira a barra inimiga.
-
-# Magos
-
-Cada mago precisa de sua caracteristica principal, para que tenha uma gameplay diferente no jogo, porém sem fugir muito da ideia de utilizar os elemento.
-
-Mago: foco em preencher as barras, deixando o jogo simples e fácil de entender
-
-⭐ Disparo mágico - Causa dano reduzido e aumenta todas as barras em 1
-
-⭐ Escudo - Reduz o dano recebido em 50% do próximo ataque e aumenta todas as barras em 1
-
-
-Feiticeiro: foco em uma barra só, focando em elementos especificos
-
-⭐ Flecha instável - causa o mesmo tipo de dano da ultima habilide usada e aumenta a barra da mesma em 2. Não pode ser usado no primeiro turno
-
-⭐ Raízes - cura 25% da vida e reduz o dano recebio em 50%, e aumenta em 1 a barra do ultimo elemento usado
-
-
-Bruxa: foco em atrapalhar a estratégia inimiga
-
-⭐ Caldeirão - Causa dano e aplica o elemento nela ao inimgo, aumenta em 2 pontos este elemento
-
-⭐ Armadilha - Repele a magia caso ela faça uma reação elemental, aumenta em 2 pontos o elemento da magia utilizada
+Habilidades de disparo e algumas ultimate aplicam elemento no inimigo, e caso esse elemento seja diferente da habilidade utilizada uma reação elemental é aplicada, isso causa um efeito dependendo dos dois elementos misturado e deixa e limpa os elementos do alvo
 
 # Reações
 
 Cada reação precisa de um efeito especial para justificar usar ela, algumas reações podem ser melhores contra inimigos especificos, ou melhores no final da luta, ou o contrário, melhor no começo, etc
 
-🔥 + 💧	Vaporizar			    Ofensivo		Causa 50% mais dano
+🔥 + 💧	Vaporizar			    		Causa 50% mais dano
 
-🌱 + 🔥	Cinzas		 		    Ofensivo		Aumenta o dano recebido em 75% no proximo turno
+🌱 + 🔥	Queimadura		 		    Causa 25% do dano ao longo de 3 turnos (75% no total)
 
-🌪️ + 🌱Folhas Cortantes	Ofensivo		Reduz a cura recebi, e ignora escudos
+🌪️ + 🌱 Folhas Cortantes	  	Reduz a cura em 75% por dois turnos
 
-🔥 + 🌪️	Explosão			    Flexível		Diminui todas a barras em 1 ponto
+🔥 + 🌪️	Explosão			    		Causa dano adicional baseado em 50% do escudo
 
-💧 + 🌱	Lama		  	    	Flexível		Próxima habilide/reação não gera pontos
+💧 + 🌱	Lama		  	    			Diminui a barra elemental em 40%
 
-💧 + 🌪️	Névoa		  	  	  Flexível		Remove todos buff
+💧 + 🌪️	Névoa		  	  	  		Reduz a velocidade em 3 por um turno
+
+# Escudos Técnicas
+
+Os escudos defendem completamente contra o mesmo elemento, apenas a reação explosão consegue ignorar escudos
+
+As técnicas tem o objetivo de manter o jogador vivo ou ganhar buff, deixando a batalha mais estratégica
+
+🔥 Foco flamejante            Aumenta o ataque em 5
+
+💧 Maré calma                 Remove debuffs e o elemento aplicado
+
+🌱 Herbalismo                 Cura 15 + 20% da vida perdida
+
+🌪️ Tufão                      Aumenta a velocidade em 2
 
 ## Diagrama de Casos de Uso
-
-A parte principal é o turno do jogador, onde ele pode escolher qual ação ele fará. O jogo dispõe para o jogador as suas 6 habilidades. Após isto, esta ação é executada, em seguida o oponente executa sua ação. Após isso, os turnos são alterados, agora o oponente fará sua ação primeiro, e então voce age,
 
 <img width="1256" height="329" alt="image" src="https://github.com/user-attachments/assets/65cce211-eb97-4a87-9666-46efa0f154d2" />
 
