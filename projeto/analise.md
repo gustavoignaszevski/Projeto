@@ -6,20 +6,20 @@
 
 Um jogo de turnos que você controla um mago e luta contra criaturas mágicas. O mago possúi quatro elementos e quatro tipos de conjuramento, sendo eles: Fogo, água, terra e vento, e disparo, escudo, técnica e ultimate. Os disparos tem o mesmo comportamento, apenas mudando seu elemento. Já a técnica é especifica para cada elemento, e a ultimate também. Para utilizar a ultimate você precisa carregar uma barra elemental utilizando magias e causando reações elementais, o elemento da magia mais usada é o que define ela. 
 
-O jogador
+**O jogador**
 
 Tem os status de ataque e vida, ele pode escolher o elemento da magia e o tipo de conjuramento.
 (Status base: 200 hp, 20 ataque, 10 velocidade)
 
->Batalhas
+**Batalhas**
 
 A batalha acontece em turnos, e quem possuír mais velocidade age antes. Caso a velocidade dos dois seja a mesma, o jogador começa.
 
-# Reações elementais
+**Reações elementais**
 
 Habilidades de disparo e algumas ultimate aplicam elemento no inimigo, e caso esse elemento seja diferente da habilidade utilizada uma reação elemental é aplicada, isso causa um efeito dependendo dos dois elementos misturado e deixa e limpa os elementos do alvo
 
-# Reações
+**Reações**
 
 Cada reação precisa de um efeito especial para justificar usar ela, algumas reações podem ser melhores contra inimigos especificos, ou melhores no final da luta, ou o contrário, melhor no começo, etc
 
@@ -35,7 +35,7 @@ Cada reação precisa de um efeito especial para justificar usar ela, algumas re
 
 💧 + 🌪️	Névoa		  	  	  		Reduz a velocidade em 3 por um turno
 
-# Escudos Técnicas
+**Escudos Técnicas**
 
 Os escudos defendem completamente contra o mesmo elemento, apenas a reação explosão consegue ignorar escudos
 
