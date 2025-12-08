@@ -37,7 +37,7 @@ Cada reação precisa de um efeito especial para justificar usar ela, algumas re
 
 **Escudos Técnicas**
 
-Os escudos defendem completamente contra o mesmo elemento, apenas a reação explosão consegue ignorar escudos
+Os escudos defendem completamente contra o mesmo elemento, apenas a reação explosão consegue ignorar escudos. Escudos não podem ser stackados e duram até serem quebrados.
 
 As técnicas tem o objetivo de manter o jogador vivo ou ganhar buff, deixando a batalha mais estratégica
 
@@ -49,9 +49,35 @@ As técnicas tem o objetivo de manter o jogador vivo ou ganhar buff, deixando a 
 
 🌪️ Tufão                      Aumenta a velocidade em 2
 
+**Ultimates**
+
+As ultimates são desbloqueadas quando a barra elemental chega em 100%, quando isso acontece, a ultimate do elemento mais usado é liberada. Ao utilizar a ultimate, a barra cai para 0% e a memoria dos ultimos elementos usados é limpa para não afetar uma seguda ultimate.
+
+🔥 Meteoro                   Causa dano massivo
+
+💧 Corrente do leviatã       Causa dano médio, limpa qualquer buff e escudo do inimigo (o escudo é limpo antes do dano)
+
+🌱 Terra Primordial          Enraiza o inimigo dando dano baixo, negando sua velocidade no proximo turno. aumenta o dano causado em 25% e reduz o dano recebido em 25% por 3 turnos
+
+🌪️ Vendaval Uivante          Causa dano médio, Dobra sua velocidade e permite causa acertos critico com 50% por 2 turnos 
+
 ## Diagrama de Casos de Uso
 
 <img width="1256" height="329" alt="image" src="https://github.com/user-attachments/assets/65cce211-eb97-4a87-9666-46efa0f154d2" />
+
+**Caso de uso: Escolher elemento**
+Um combo box que permite selecionar entre os quatro elementos
+
+**Caso de uso: Escolher tipo de conjuração**
+Um combo box que permite selecionar entre os quatro tipos de conjurações
+
+**Caso de uso: Conjurar**
+Checa ambas boxes do elemento e do tipo de conjuração e a utiliza para definir qual habilidade será conjurada. O sistema pega a velocidade do jogador e do inimigo e checa se a do jogador é igual ou maior que a do inimigo para dedicidir qual habilidade será conjurada primeiro.
+Caso a habilidade selecionada seja:
+1. Disparo: pega o ataque e calcula o dano base da habilidade, aumenta a barra elemental, e ao acertar o inimgo, aplica o elemento nele, e se o inimigo já possuir um elemento, checa se aquele elemento é diferente do elemento aplicado, se sim, causa a reação elemental, e então aplica estes efeito e depois atualiza os labels necessários após isso. Também salva numa variável quantas vezes aquele elemento específico foi usado
+2. Escudo: dá um escudo ao jogador do elemento especificado e aumenta a barra elemental.
+3. Técnica: Aplica buff/efeito no jogador
+4. Ultimate: por padrão desativada, quando a a barra elemental chegar a 100%, o botão fica disponível. O elemento da ultimate é definido com base no elemento mais usado dos ultimos conjuramentos (esses conjuramentos não ficam a mostra). Caso os dois maiores elementos possuam a mesma quantidade de casts, há uma prioridade dos elementos: Fogo > agua > terra > vento. Ao utilizar a ultimate a barra elemental cai para 0% e os contadores são resetados para não influenciarem numa possível segunda ultimate, então é aplicado o elemento da ultimate no alvo, e detecta reações elementais caso ela possa acontecer.
 
 ## Diagrama de Domínio do problema
 
