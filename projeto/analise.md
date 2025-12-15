@@ -69,23 +69,24 @@ As ultimates são desbloqueadas até houve pontos suficientes na barra elemental
   • -2 DEF (alvo)
   • Cura 5 + 5% da vida perdida
 
-## Diagrama de Casos de Uso (TUDO ABAIXO DISSO ESTA DESATUALIZADO)
+## Diagrama de Casos de Uso
 
-<img width="1256" height="329" alt="image" src="https://github.com/user-attachments/assets/65cce211-eb97-4a87-9666-46efa0f154d2" />
+<img width="921" height="448" alt="Desktop Screenshot 2025 12 15 - 19 16 35 76" src="https://github.com/user-attachments/assets/81ecb8db-0c81-4e69-a581-7c19dde4f694" />
 
-**Caso de uso: Escolher elemento**
-Um combo box que permite selecionar entre os quatro elementos
+**Caso de uso: Selecionar habilidade**
+Quatro botöes, um para cada habilidade elemental
 
-**Caso de uso: Escolher tipo de conjuração**
-Um combo box que permite selecionar entre os quatro tipos de conjurações
+**Caso de uso: Selecionar Ultimate**
+Um QComboBox onde o jogador pode selecionar a ultimate, caso ele tenha a quantidade de pontos requisitada o botäo de conjurar a ultimate é liberado
 
-**Caso de uso: Conjurar**
-Checa ambas boxes do elemento e do tipo de conjuração e a utiliza para definir qual habilidade será conjurada. O sistema pega a velocidade do jogador e do inimigo e checa se a do jogador é igual ou maior que a do inimigo para dedicidir qual habilidade será conjurada primeiro.
-Caso a habilidade selecionada seja:
-1. Disparo: pega o ataque e calcula o dano base da habilidade, aumenta a barra elemental, e ao acertar o inimgo, aplica o elemento nele, e se o inimigo já possuir um elemento, checa se aquele elemento é diferente do elemento aplicado, se sim, causa a reação elemental, e então aplica estes efeito e depois atualiza os labels necessários após isso. Também salva numa variável quantas vezes aquele elemento específico foi usado
-2. Escudo: dá um escudo ao jogador do elemento especificado e aumenta a barra elemental.
-3. Técnica: Aplica buff/efeito no jogador
-4. Ultimate: por padrão desativada, quando a a barra elemental chegar a 100%, o botão fica disponível. O elemento da ultimate é definido com base no elemento mais usado dos ultimos conjuramentos (esses conjuramentos não ficam a mostra). Caso os dois maiores elementos possuam a mesma quantidade de casts, há uma prioridade dos elementos: Fogo > agua > terra > vento. Ao utilizar a ultimate a barra elemental cai para 0% e os contadores são resetados para não influenciarem numa possível segunda ultimate, então é aplicado o elemento da ultimate no alvo, e detecta reações elementais caso ela possa acontecer.
+**Caso de uso: Detecta vitória/derrota**
+Checa a vida o jogador e do inimigo para saber se o jogador ganhou ou perdeu
+
+**Caso de uso: Reiniciar batalha*
+Depois da derrota ou vitória é dado a opção de reseta a batalha para o inicio
+
+**Caso de uso: Detecta Escolhe habilidade aleatória**
+O sistema (oponente) escolhe uma habilidade aleatória das quatro e usa ela
 
 ## Diagrama de Domínio do problema
 
