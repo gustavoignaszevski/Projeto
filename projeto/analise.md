@@ -4,62 +4,70 @@
 
 # Principal
 
-Um jogo de turnos que você controla um mago e luta contra criaturas mágicas. O mago possúi quatro elementos e quatro tipos de conjuramento, sendo eles: Fogo, água, terra e vento, e disparo, escudo, técnica e ultimate. Os disparos tem o mesmo comportamento, apenas mudando seu elemento. Já a técnica é especifica para cada elemento, e a ultimate também. Para utilizar a ultimate você precisa carregar uma barra elemental utilizando magias e causando reações elementais, o elemento da magia mais usada é o que define ela. 
+Um jogo de turnos que você controla um mago e luta contra criaturas mágicas. O mago possúi quatro elementos, sendo eles: Fogo, água, terra e vento. As magias tem o mesmo comportamento, apenas mudando seu elemento. Tambem ha as ultimates, que podem aplicar ou elemento ou não, assim como tabmém serem buff, para utilizar a ultimate você precisa carregar uma barra elemental utilizando magias e causando reações elementais, utilizar uma habilidade aumenta em 5 a barra, e uma reação aumenta em mais 10, até uma maximo de 100.
 
 **O jogador**
 
-Tem os status de ataque e vida, ele pode escolher o elemento da magia e o tipo de conjuramento.
-(Status base: 200 hp, 20 ataque, 10 velocidade)
+Tem os status de ataque e vida, ele pode escolher a magia para conjurar ou a ultimate caso a barra elemental esteja carregada o suficiente.
+(Status base: 200 hp, 20 ataque, 10 defesa)
 
 **Batalhas**
 
-A batalha acontece em turnos, e quem possuír mais velocidade age antes. Caso a velocidade dos dois seja a mesma, o jogador começa.
+A batalha acontece em turnos, e o jogador sempre começa.
 
 **Reações elementais**
 
-Habilidades de disparo e algumas ultimate aplicam elemento no inimigo, e caso esse elemento seja diferente da habilidade utilizada uma reação elemental é aplicada, isso causa um efeito dependendo dos dois elementos misturado e deixa e limpa os elementos do alvo
+Habilidades e algumas ultimate aplicam elemento no inimigo, e caso esse elemento seja diferente da habilidade utilizada uma reação elemental é aplicada, isso causa um efeito dependendo dos dois elementos misturado e deixa e limpa os elementos do alvo
 
 **Reações**
 
 Cada reação precisa de um efeito especial para justificar usar ela, algumas reações podem ser melhores contra inimigos especificos, ou melhores no final da luta, ou o contrário, melhor no começo, etc
 
-🔥 + 💧	Vaporizar			    		Causa 50% mais dano
+🔥 + 💧	Vaporizar			    		Aumenta seu ataque em 5
 
-🌱 + 🔥	Queimadura		 		    Causa 25% do dano ao longo de 3 turnos (75% no total)
+🌱 + 🔥	Queimadura		 		    Reduz a defesa do alvo em 5
 
-🌪️ + 🌱 Folhas Cortantes	  	Reduz a cura em 75% por dois turnos
+🌪️ + 🌱 Folhas Cortantes	  	O ataque ignora a defesa
 
-🔥 + 🌪️	Explosão			    		Causa dano adicional baseado em 50% do escudo
+🔥 + 🌪️	Explosão			    		Reduz o ataque do alvo em 5
 
-💧 + 🌱	Lama		  	    			Diminui a barra elemental em 40%
+💧 + 🌱	Lama		  	    			O conjurador cura 10 + 10% da vida perdida
 
-💧 + 🌪️	Névoa		  	  	  		Reduz a velocidade em 3 por um turno
-
-**Escudos Técnicas**
-
-Os escudos defendem completamente contra o mesmo elemento, apenas a reação explosão consegue ignorar escudos. Escudos não podem ser stackados e duram até serem quebrados.
-
-As técnicas tem o objetivo de manter o jogador vivo ou ganhar buff, deixando a batalha mais estratégica
-
-🔥 Foco flamejante            Aumenta o ataque em 5
-
-💧 Maré calma                 Remove debuffs e o elemento aplicado
-
-🌱 Herbalismo                 Cura 15 + 20% da vida perdida
-
-🌪️ Tufão                      Aumenta a velocidade em 2
+💧 + 🌪️	Névoa		  	  	  		Aumenta a defesa do conjurador em 5
 
 **Ultimates**
 
-As ultimates são desbloqueadas quando a barra elemental chega em 100%, quando isso acontece, a ultimate do elemento mais usado é liberada. Ao utilizar a ultimate, a barra cai para 0% e a memoria dos ultimos elementos usados é limpa para não afetar uma seguda ultimate.
+As ultimates são desbloqueadas até houve pontos suficientes na barra elemental, quando isso acontece. Ao utilizar a ultimate, a barra é reduzida o quanto aquela ultimate custa.
 
-🔥 Meteoro                   Causa dano massivo
+☄️ Meteoro do Fulgor (60)
+- Causa 250% do ataque como dano
+- Aplica elemento Fogo
 
-💧 Corrente do leviatã       Causa dano médio, limpa qualquer buff e escudo do inimigo (o escudo é limpo antes do dano)
+🐉 Corrente do Leviatã (40)
+- Cura 30 + 20% da vida perdida
+- Remove o elemento aplicado em si
 
-🌱 Terra Primordial          Enraiza o inimigo dando dano baixo, negando sua velocidade no proximo turno. aumenta o dano causado em 25% e reduz o dano recebido em 25% por 3 turnos
+⛰️ Terra Primordial (50)
+- Defesa +15 para si
+- Defesa -5 para o inimigo
 
-🌪️ Vendaval Uivante          Causa dano médio, Dobra sua velocidade e permite causa acertos critico com 50% por 2 turnos 
+🌀️ Vendaval Uivante (70)
+- Causa 200% do ataque como dano
+- Aplica Vento
+- Se causar reação, mantém o elemento Vento
+
+🛰 Laser Orbital (100)
+- Causa 300% do ataque como dano verdadeiro
+- Ignora defesa
+  
+💠 Zoltrak (30)
+- Causa 150% do ataque como dano
+- Aplica um efeito aleatório:
+  • +2 ATK (si mesmo)
+  • -2 ATK (alvo)
+  • +2 DEF (si mesmo)
+  • -2 DEF (alvo)
+  • Cura 5 + 5% da vida perdida
 
 ## Diagrama de Casos de Uso
 
