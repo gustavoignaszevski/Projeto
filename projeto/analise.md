@@ -88,7 +88,7 @@ Depois da derrota ou vitória é dado a opção de reseta a batalha para o inici
 **Caso de uso: Detecta Escolhe habilidade aleatória**
 O sistema (oponente) escolhe uma habilidade aleatória das quatro e usa ela
 
-## Diagrama de Domínio do problema
+## Diagrama de Domínio do problema (DESATUALIZADO)
 
 <img width="961" height="710" alt="image" src="https://github.com/user-attachments/assets/0b35c129-79cc-41a4-819d-07b14c3fc0b1" />
 
