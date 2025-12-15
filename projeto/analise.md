@@ -69,7 +69,7 @@ As ultimates são desbloqueadas até houve pontos suficientes na barra elemental
   • -2 DEF (alvo)
   • Cura 5 + 5% da vida perdida
 
-## Diagrama de Casos de Uso
+## Diagrama de Casos de Uso (TUDO ABAIXO DISSO ESTA DESATUALIZADO)
 
 <img width="1256" height="329" alt="image" src="https://github.com/user-attachments/assets/65cce211-eb97-4a87-9666-46efa0f154d2" />
 
